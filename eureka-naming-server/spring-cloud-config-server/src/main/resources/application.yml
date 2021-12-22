@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ManojKumarher/environment-variable-repo
+         # https://github.com/ManojKumarher/environment-variable-repo.git 
+          
+          # https://github.com/ManojKumarher/cloud-config-server/blob/main/application.properties
+          
+        # https://github.com/techefx/environment-variable-repo.git 
+        #  https://github.com/ManojKumarher/environment-variable-repo.git 
+
+server:
+  port: ${port:8888}
+
